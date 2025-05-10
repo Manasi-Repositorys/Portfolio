@@ -1,0 +1,311 @@
+/* ===== Reset and Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* ===== Navbar ===== */
+  nav {
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #0d6efd;
+  }
+  
+  /* ===== Full-Screen Section Layout ===== */
+  .full-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  /* ===== Container for Two Columns ===== */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+  }
+  
+  /* ===== Text Column ===== */
+  .text-column {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  .text-column h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #72d843;
+  }
+  
+  .text-column span {
+    color: #fff;
+  }
+  
+  .text-column p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* ===== Image Column ===== */
+  .image-column {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-column img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #437cd8; /* Stylish green for heading */
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ddd;
+  }
+  
+  /* Section Title */
+.section-title {
+    /* text-align: right; */
+    font-size: 2.5rem;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #e3d72f;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  /* Project Grid */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 60px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background-color: #111;
+    padding: 10px; /* Reduced padding */
+    border-radius: 12px; /* Slightly reduced border radius */
+    box-shadow: 0 8px 15px #ddd; /* Slightly reduced shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px; /* Slightly reduced border radius for images */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .project-card h3,a {
+    color: #0d6efd;
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 1.2rem; /* Adjust font size if needed */
+  }
+  
+  .project-card p {
+    color: #ccc;
+    font-size: 0.9rem; /* Reduced font size */
+  }
+  
+  /* Hover Effect */
+  .project-card:hover {
+    transform: translateY(-8px); /* Slightly reduced hover effect */
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.15); /* Adjusted shadow on hover */
+}
+  
+  
+  .contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    color: #72d843;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #contactForm {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  #contactForm input:focus,
+  #contactForm textarea:focus {
+    border: 1px solid #72d843;
+    outline: none;
+  }
+  
+  #contactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submit-btn {
+    padding: 14px;
+    background-color: #5ae063;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5fb135;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .contact-heading {
+      font-size: 2rem;
+    }
+  
+    #contactForm {
+      padding: 0 10px;
+    }
+  }
+  
+  /* Scroll Animation */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* Optional: delay each card's animation */
+  .project-card:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .project-card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-column,
+    .image-column {
+      flex: 1 1 100%;
+    }
+  
+    .text-column h1 {
+      font-size: 2.2rem;
+    }
+  
+    .text-column p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  

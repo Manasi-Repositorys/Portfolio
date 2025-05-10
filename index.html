@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">WebDevPro</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="full-screen">
+    <div class="container">
+      <!-- Left Column: Text -->
+      <div class="text-column">
+        <h1>Hi, I'm Manasi Fadkari <br><span>Web Developer</span></h1>
+        <p>
+          Building future-ready websites with clean code and great design.
+          I am a passionate front-end developer who loves crafting modern and responsive
+          web applications using clean HTML, CSS, and JavaScript.
+        </p>
+      </div>
+  
+      <!-- Right Column: Image -->
+      <div class="image-column">
+        <img src="image.jpg" alt="Profile Image" />
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about" class="full-screen about-section">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p class="fade-in">I'm a passionate web developer focused on creating clean, responsive, and user-friendly websites. 
+        I love crafting modern and interactive web applications using HTML, CSS, and JavaScript. 
+        My goal is to build seamless user experiences that not only look great but also function flawlessly.</p>
+        <p class="fade-in">With a keen eye for design and a strong understanding of web technologies, I strive to stay updated 
+        with the latest trends and best practices in web development. Whether it's a simple landing page 
+        or a complex web application, I approach each project with enthusiasm and dedication.</p>
+        <p class="fade-in">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+        or sharing my knowledge through blogging and tutorials. Let's connect and create something amazing together!</p>
+    </div>
+</section>
+
+  
+  
+
+  <section id="projects" class="full-screen">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="proj_1.png" alt="Project 1">
+        <h3><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Create a WEB Application using HTML,CSS & JAVA</a></h3>
+      </div>
+      <div class="project-card">
+        <img src="proj_2.jpg" alt="Project 2" />
+        <h3><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Ecommerce Website using Python Project </a></h3>
+      </div>
+      <div class="project-card">
+        <img src="proj_3.jpg" alt="Project 2" />
+        <h3><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Dilivery website using HTML,CSS,JAVASCRIPT</a></h3>
+      </div>
+      <div class="project-card">
+        <img src="proj_4.jpg" alt="Project 2" />
+        <h3><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Conferencing video call Application using java and javascript.</a></h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="full-screen contact-section">
+    <h2 class="contact-heading">Contact Me</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>© 2025 WebDevPro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
